@@ -24,5 +24,13 @@ public class ClaseParesImpares {
 
     }
 
+    public static void getRangoNumeros(int inicio,int fin, boolean pares){
+        if(pares == true){
+            getNumerosPares(inicio,fin);
+        }else{
+            getNumerosImpares(inicio, fin);
+        }
+    }
+
 
 }
