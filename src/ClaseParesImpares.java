@@ -1,6 +1,6 @@
 public class ClaseParesImpares {
 
-    public static void getNumerosPares(int inicio, int fin) {
+    private static void getNumerosPares(int inicio, int fin) {
 
         for (int i = inicio; i <= fin; i++) {
 
@@ -12,7 +12,7 @@ public class ClaseParesImpares {
 
     }
 
-    public static void getNumerosImpares(int inicio, int fin) {
+    private static void getNumerosImpares(int inicio, int fin) {
 
         for (int i = inicio; i <= fin; i++) {
 
