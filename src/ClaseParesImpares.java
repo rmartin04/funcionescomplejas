@@ -12,4 +12,17 @@ public class ClaseParesImpares {
 
     }
 
+    public static void getNumerosImpares(int inicio, int fin) {
+
+        for (int i = inicio; i <= fin; i++) {
+
+            if (i % 2 != 0) {
+                System.out.println("impar : " + i);
+            }
+
+        }
+
+    }
+
+
 }

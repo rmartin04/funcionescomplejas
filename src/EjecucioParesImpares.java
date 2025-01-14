@@ -14,7 +14,7 @@ public class EjecucioParesImpares {
         entrada = teclado.nextLine();
         int fin = Integer.parseInt(entrada);
 
-        ClaseParesImpares.getNumerosPares(inicio,fin);
+        ClaseParesImpares.getNumerosImpares(inicio,fin);
 
     }
 }
