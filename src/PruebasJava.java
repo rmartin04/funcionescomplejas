@@ -4,34 +4,32 @@ import java.util.Scanner;
 public class PruebasJava {
 
     public static void main(String[] args) {
-        
-       // Scanner teclado = new Scanner(System.in);
 
-        String texto = "8441513929";
-     
-        int suma = 0; 
+        String narcisista ="156";
 
-        for (int i = 0; i < texto.length(); i++){
+   
+        int suma = 0;
 
-            char letra = texto.charAt(i);
+        for (int i = 0; i < narcisista.length(); i++) {
+
+            char letra = narcisista.charAt(i);
 
             String temporal = String.valueOf(letra);
 
             int numero = Integer.parseInt(temporal);
 
-            int  multiplicacion = numero * (i+1);
+            double potencia = Math.pow(numero,narcisista.length());
 
-             suma += multiplicacion;
+            suma += potencia;
 
-    }
-    
-        boolean resultado ;
-        if (suma % 11 == 0){
-            resultado = true;
-            System.out.println("El codigo ISBN es correcto ");
-        }else {
-            resultado = false;
-            System.out.println("El codigo ISBN no es correcto ");
         }
-}
+       
+        String suma2 = String.valueOf(suma);
+        if(narcisista.equals(suma2)){
+            System.out.println("El numero "+ narcisista + " es narcisista");
+
+        }else{
+            System.out.println("El numero "+ narcisista + " no es narcisista ");
+        }
+    }
 }

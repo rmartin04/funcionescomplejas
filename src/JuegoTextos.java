@@ -46,4 +46,6 @@ public class JuegoTextos {
         }
       
     }
+
+    public static String validarNarcisista
 }
