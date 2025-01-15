@@ -5,22 +5,19 @@ public class EjecucionArrays {
 
         Scanner teclado = new Scanner(System.in);
 
+        int []numeros = JuegoArrays.getArrayRandom(6);
+
+        System.out.println("Los valores el array son :");
        
+        for (int valores : numeros) {
 
-        int[] numerosArray = new int[3];
-
-        for (int i = 0; i < numerosArray.length; i++) {
-
-           // System.out.println("Introduzca el valor para la posicion :" + i);
-
-            numerosArray[i] = (int)(Math.random()*100);
+        System.out.println(valores);
 
         }
-         for (int valores : numerosArray) {
-             System.out.println(valores);
-         }
+      
+       
 
-        int suma = JuegoArrays.sumarNumerosArray(numerosArray);
+        int suma = JuegoArrays.sumarNumerosArray(numeros);
         System.out.println("La suma de los valores del array es : " + suma);
 
     }
