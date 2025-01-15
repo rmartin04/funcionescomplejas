@@ -1,11 +1,23 @@
+
+import java.util.Scanner;
+
+
+
 public class EjecucionTextos {
 
     public static void main(String[] args) {
 
-        String texto = "87654";
+        Scanner teclado = new Scanner(System.in);
+
+             System.out.println("Introduzca un texto numerico ");
+
+                 String texto = teclado.nextLine();
+
+                     System.out.println(texto);
         
-        int resultado = JuegoTextos.getSumaTexto(texto);
-        System.out.println( "La suma de los numeros del texto es " + resultado);
+                int resultado = JuegoTextos.getSumaTexto(texto);
+
+             System.out.println( "La suma de los numeros del texto es " + resultado);
 
    
     }
