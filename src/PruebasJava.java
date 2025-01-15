@@ -8,7 +8,7 @@ public class PruebasJava {
        // Scanner teclado = new Scanner(System.in);
 
         String texto = "8441513929";
-        int multiplicacion = 0;
+     
         int suma = 0; 
 
         for (int i = 0; i < texto.length(); i++){
@@ -19,7 +19,7 @@ public class PruebasJava {
 
             int numero = Integer.parseInt(temporal);
 
-            multiplicacion = numero * (i+1);
+            int  multiplicacion = numero * (i+1);
 
              suma += multiplicacion;
 

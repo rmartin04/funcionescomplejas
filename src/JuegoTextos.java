@@ -21,7 +21,7 @@ public class JuegoTextos {
     }
 
     public static boolean validarISBN(String isbn) {
-        int multiplicacion = 0;
+       
         int suma = 0;
 
         for (int i = 0; i < isbn.length(); i++) {
@@ -32,20 +32,18 @@ public class JuegoTextos {
 
             int numero = Integer.parseInt(temporal);
 
-            multiplicacion = numero * (i + 1);
+            int multiplicacion = numero * (i + 1);
 
             suma += multiplicacion;
 
         }
 
-        boolean resultado;
+       
         if (suma % 11 == 0) {
-            resultado = true;
-            System.out.println("El codigo ISBN es correcto ");
+           return true; 
         } else {
-            resultado = false;
-            System.out.println("El codigo ISBN no es correcto ");
+           return false;
         }
-        return resultado;
+      
     }
 }

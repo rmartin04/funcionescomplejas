@@ -29,6 +29,11 @@ public class EjecucionTextos {
                 System.out.println("Ha introducido el código ISBN : " + isbn);
 
                 boolean valido = JuegoTextos.validarISBN(isbn);
+                if(valido == true){
+                    System.out.println("El código introducido es correcto ");
+                }else{
+                    System.out.println("El código introducido no es correcto ");
+                }
 
                 //System.out.println(valido);
     }
