@@ -6,7 +6,16 @@ public class EjecucionArrays {
         
         Scanner teclado = new Scanner(System.in);
 
+        int [] numerosArray ={5,10,15};
+        int suma = 0;
+        for(int i = 0; i < numerosArray.length;i++){
 
+            suma += numerosArray[i];
+
+        }
+         
+        System.out.println(suma);
+      
     }
 
 
