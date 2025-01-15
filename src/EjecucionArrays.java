@@ -5,17 +5,20 @@ public class EjecucionArrays {
 
         Scanner teclado = new Scanner(System.in);
 
+       
+
         int[] numerosArray = new int[3];
+
         for (int i = 0; i < numerosArray.length; i++) {
 
-            System.out.println("Introduzca el valor para la posicion :" + i);
+           // System.out.println("Introduzca el valor para la posicion :" + i);
 
-            numerosArray[i] = teclado.nextInt();
+            numerosArray[i] = (int)(Math.random()*100);
 
         }
-        // for (int valores : numerosArray) {
-        //     System.out.println(valores);
-        // }
+         for (int valores : numerosArray) {
+             System.out.println(valores);
+         }
 
         int suma = JuegoArrays.sumarNumerosArray(numerosArray);
         System.out.println("La suma de los valores del array es : " + suma);
